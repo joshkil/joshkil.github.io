@@ -1,24 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    <title>Josh-Kil</title>
+<title>Josh Brandon Kilpatrick</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Josh-Kil</h1>
-    <p>Writings of a concerned citizen.</p>
-  </header>
 
-  <main>
-    <p style="text-align: center;"> <a href="20231125.html">Nov 25, 2023 - Leaving the Party Early</a></p>
-    <p style="text-align: center;"> <a href="./writing/Starting.pdf">Dec 14, 2023 - Starting</a></p>
-  </main>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#writing" class="w3-button w3-block w3-black">WRITING</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#identity" class="w3-button w3-block w3-black">IDENTITY</a>
+    </div>
+  </div>
+</div>
 
-  <footer>
-    <p>Josh-Kil. &copy; 2023</p>
-  </footer>
+<!-- Header with Empty Content -->
+<header class="w3-display-container w3-grayscale-min" id="home">
+  
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">JOSH BRANDON KILPATRICK</span></h5>
+
+    <p>You've found content made by a human! I'm Josh Kilpatrick. I like to contemplate and write, and 
+    for many years I've wanted to create something. I always got stuck trying to find a topic or a point.
+    Wanting to writing to be unique and valuable, I rejected most of my ideas. "These ideas have been 
+    done before," I'd think. I've wasted years tring to get past first base. </p>
+
+    <p>This site is my rebellion. This site doesn't care. Because I must express my views before I die,
+    and because I can die at any moment, I must start. This site is orderless and themeless. Save only that
+    all the content is mine, we may find no binding them at all.</p>
+  </div>
+</div>
+
+<!-- Writing Container -->
+<div class="w3-container" id="writing">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WRITINGS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Essays');" id="myLink">
+        <div class="w3-third s6 tablink">ESSAYS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Poems');">
+        <div class="w3-third s6 tablink">POEMS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Meditations');">
+        <div class="w3-third s6 tablink">MEDITATIONS</div>
+      </a>
+    </div>
+
+    <div id="Essays" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Essays</h5>
+      <p class="w3-text-grey">Dec 14, 2023 - Starting [<a href="./writing/Starting.pdf" target="_blank" class="w3-hover-text-green">read</a>] [<a href="" target="_blank" class="w3-hover-text-green">signature</a>]</p>
+
+      <p class="w3-text-grey">Dec 19, 2023 - 2023-A-Year-Contemplated [<a href="./writing/20231219-2023-A-Year-Contemplated.pdf" target="_blank" class="w3-hover-text-green">read</a>] [<a href="" target="_blank" class="w3-hover-text-green">signature</a>]</p>
+      
+
+    </div>
+
+    <div id="Poems" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Poems</h5>
+      <p class="w3-text-grey">Poem 1</p><br>
+    </div>  
+    <div id="Meditations" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Meditations</h5>
+      <p class="w3-text-grey">Meditation 1</p><br>
+    </div>  
+  </div>
+</div>
+
+<!-- Identity Container -->
+<div class="w3-container" id="identity">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">IDENTITY</span></h5>
+    <p>How do you know content is mine and that I am a person?</p>
+
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p> &#169; 2024 Joshua Brandon Kilpatrick</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
 </html>
