@@ -29,13 +29,19 @@ body, html {
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
+    <div class="w3-col s2">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#writing" class="w3-button w3-block w3-black">WRITING</a>
+    <div class="w3-col s2">
+      <a href="#essays" class="w3-button w3-block w3-black">ESSAYS</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
+      <a href="#poems" class="w3-button w3-block w3-black">POEMS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#meditations" class="w3-button w3-block w3-black">MEDITATIONS</a>
+    </div>
+    <div class="w3-col s2">
       <a href="#identity" class="w3-button w3-block w3-black">IDENTITY</a>
     </div>
   </div>
@@ -77,52 +83,119 @@ body, html {
   </div>
 </div>
 
-<!-- Writing Container -->
-<div class="w3-container" id="writing">
+<!-- Essays Container -->
+<div class="w3-container" id="essays">
   <div class="w3-content" style="max-width:700px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WRITINGS</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Essays');" id="myLink">
-        <div class="w3-third s6 tablink">ESSAYS</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Poems');">
-        <div class="w3-third s6 tablink">POEMS</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Meditations');">
-        <div class="w3-third s6 tablink">MEDITATIONS</div>
-      </a>
-    </div>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ESSAYS</span></h5>
 
-    <div id="Essays" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Essays</h5>
-      <p class="w3-text-grey">Dec 14, 2023 - Starting [<a href="./writing/Starting.pdf" target="_blank" class="w3-hover-text-green">read</a>] [<a href="" target="_blank" class="w3-hover-text-green">signature</a>]</p>
+    <table class="w3-table w3-bordered w3-card-4">
+    <tr>
+      <td><a href="./writing/20231219-2023-A-Year-Contemplated.pdf" target="_blank" class="w3-hover-text-green">2023 A Year Contemplated</a></td>
+      <td>2023-12-19</td>
+      <td><a href="./writing/20231219-2023-A-Year-Contemplated.pdf.sig.base64" class="w3-hover-text-green" download>signature</a></td>
+    </tr>
+    <tr>
+      <td><a href="./writing/Starting.pdf" target="_blank" class="w3-hover-text-green">Starting</a></td>
+      <td>2023-12-14</td>
+      <td><a href="./writing/Starting.pdf.sig.base64" class="w3-hover-text-green" download>signature</a></td>
+    </tr>
+    </table>
 
-      <p class="w3-text-grey">Dec 19, 2023 - 2023-A-Year-Contemplated [<a href="./writing/20231219-2023-A-Year-Contemplated.pdf" target="_blank" class="w3-hover-text-green">read</a>] [<a href="" target="_blank" class="w3-hover-text-green">signature</a>]</p>
-      
+  </div>
+</div>
 
-    </div>
+<!-- Poems Container -->
+<div class="w3-container" id="poems">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">POEMS</span></h5>
 
-    <div id="Poems" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Poems</h5>
-      <p class="w3-text-grey">Poem 1</p><br>
-    </div>  
-    <div id="Meditations" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Meditations</h5>
-      <p class="w3-text-grey">Meditation 1</p><br>
-    </div>  
+    <table class="w3-table w3-bordered w3-card-4">
+    <tr>
+      <td><a href="" target="_blank" class="w3-hover-text-green">Poem 1</a></td>
+      <td>YYYY-MM-DD</td>
+      <td><a href="" target="_blank download" class="w3-hover-text-green">signature</a></td>
+    </tr>
+    </table>
+    
+  </div>
+</div>
+
+
+<!-- Meditations Container -->
+<div class="w3-container" id="meditations">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MEDITATIONS</span></h5>
+
+    <table class="w3-table w3-bordered w3-card-4">
+    <tr>
+      <td><a href="" target="_blank" class="w3-hover-text-green">Meditation 1</a></td>
+      <td>YYYY-MM-DD</td>
+      <td><a href="" target="_blank download" class="w3-hover-text-green">signature</a></td>
+    </tr>
+    </table>
+    
   </div>
 </div>
 
 <!-- Identity Container -->
 <div class="w3-container" id="identity">
-  <div class="w3-content" style="max-width:700px">
+  
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">IDENTITY</span></h5>
-    <p>How do you know content is mine and that I am a person?</p>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-panel w3-card">
+        <h6 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">CHARACTERISTICS</span></h6>
+        <p>Anyone claiming to be the Joshua Brandon Kilpatrick of joshkil.github.io should be able to demonstrate.</p>
+        <ol class="w3-ol">
+          <li>Physical likeness to this <a href="./headshot.jpg" target="_blank" download class="w3-hover-text-green">photo</a></li>
+          <li>Birth in 1976 in Biloxi, MS</li>
+          <li>Transcript from <a href="https://www.registrar.msstate.edu/transcripts" target="_blank" download class="w3-hover-text-green"> MSU</a> with only one B.</li>
+        </ol>
+        
+      </div>
 
-    
-  </div>
+      <div class="w3-third w3-panel w3-card">
+        <h6 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">PUBLIC KEY</span></h6>
+        <p>This is the public RSA key for the private key I use to sign my work.</p>
+        <div class="w3-code notranslate" style="font-size: xx-small;">
+-----BEGIN PUBLIC KEY----- <br>
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoVcM3qo2ZGzQXkXZCL0U
+lfgLmjerGy7smB/XpuRRiUrHQ20U75EmgtpgZElUdk80kzFlqpu73E/wKuhggggz
+x3yoWABpiwAUF/PUSH4ff7EvbdNDQvCrJsaVxqL/f73Hc8uVEQpHlW2IxEhjZVtD
+YqR/e2v4zDeZ4R/7io6PUdkABHeW/uNFLtBdOiIDowCplCVGxtrgrmoasZSbgfaE
+aJZQvjxedIj71b/ATYj2yKfdHA75Xl3DCO6+kZv4FoN6UL1v+QIpjLPkVGGJFjWm
+D10qQ9dh2fxWHfYl23BnBcvwFpRcU1VthE+bycAdy32a1XdMdRTxMzLaiDqe/YH/
+5Mlg9VUbZ/eD2asxB+0Njk01SNo+7wPbAmjlk+7Tm0vcV69oWQPYb59LmYWX8yfO
+nT2VPdMTg9YcL2ZaDntOCX2AxJN1CIQfObMbCx7DpEbCJWaljR2U8ooNJg/k8Olm
+a+sIQ0IEF81bAml+yTNRN0UbEiteJuDPC6q8hPJGKd0YX4N6eVU2uwKQjirk2Xid
+Tv9lhHLIc3nqKma8WhGoPqLnnnol1Jy9nH+bPqK5CrJVPCRCFO0ApjOnbsdF0sgV
+rv38/ajFXBdqG4XlvRUySz6CHZ4uWZVKnfUyaoGEMOyrwAKllwzUSLJRLInPXqhO
+wp+A9eSCxhqOqLVrZ8lBhCECAwEAAQ== <br>
+-----END PUBLIC KEY----- <br>
+        </div>
+
+        <p class="w3-center"><a href="./joshkil.github.io.pem" download>download</a></p>
+
+      </div>
+
+      <div class="w3-third w3-panel w3-card">
+        <h6 class="w3-center w3-padding-16"><span class="w3-tag w3-wide">VALIDATION PROCEDURE</span></h6>
+        <p>After downloading my public key and the signature for one of my works, you can use the following commands to validate authenticity.</p>
+
+        <div class="w3-code notranslate" style="font-size: small;">
+> openssl enc -base64 -d -in joshs_work.sig.base64 -out sig.sha256 <br>
+<br>
+> openssl dgst -sha256 -verify joshkil.github.io.pem -signature sig.sha256 joshs_work.pdf <br>
+<br>
+> rm sig.sha265 <br>
+
+        </div>
+      </div>
+
+    </div>
+
 </div>
 
 <!-- End page content -->
